@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C720D8E-B6B3-464D-B6BD-0654B97240E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rental_House_Management_Sytem</RootNamespace>
+    <AssemblyName>Rental_House_Management_Sytem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Tutorials.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 20.1\Components\Bin\Framework\DevExpress.Tutorials.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contract.Designer.cs">
+      <DependentUpon>contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbord.Designer.cs">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="frm_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_payment.Designer.cs">
+      <DependentUpon>frm_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="House.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="House.Designer.cs">
+      <DependentUpon>House.cs</DependentUpon>
+    </Compile>
+    <Compile Include="house_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="house_report.Designer.cs">
+      <DependentUpon>house_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment_report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="payment_report.Designer.cs">
+      <DependentUpon>payment_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pay_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pay_report.Designer.cs">
+      <DependentUpon>pay_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenants.Designer.cs">
+      <DependentUpon>tenants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenant_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenant_in.Designer.cs">
+      <DependentUpon>tenant_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tenant_out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tenant_out.Designer.cs">
+      <DependentUpon>tenant_out.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="contract.resx">
+      <DependentUpon>contract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord.resx">
+      <DependentUpon>Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_payment.resx">
+      <DependentUpon>frm_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="House.resx">
+      <DependentUpon>House.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="house_report.resx">
+      <DependentUpon>house_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment_report.resx">
+      <DependentUpon>payment_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pay_report.resx">
+      <DependentUpon>pay_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="tenants.resx">
+      <DependentUpon>tenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenant_in.resx">
+      <DependentUpon>tenant_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tenant_out.resx">
+      <DependentUpon>tenant_out.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Image\aria-montague-thumb-1.jpg" />
+    <Content Include="Image\IMG_5654_tn.jpg" />
+    <Content Include="Image\istockphoto-628884828-1024x1024.jpg" />
+    <Content Include="Image\Mobile-Wallets-vs-Payment-Banks-Whats-the-Difference.jpg" />
+    <Content Include="Image\Tenant.jpg" />
+    <Content Include="Image\Termination-of-a-contract-arbitration-clause.png" />
+    <Content Include="Image\unpaid-icon-isolated-white-background-your-web-mobile-app-design-133862153.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
